@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import { PersonLink } from '../PersonLink/PersonLink';
-import { IsParents } from '../../types/IsParents';
 import { Person } from '../../types';
 import { father, mother } from './checkParents';
 
@@ -21,7 +20,7 @@ export const PersonItem: React.FC<PersonItemProps> = ({
       })}
     >
       <td>
-        <PersonLink person={person} isParents={IsParents.NotParent} />
+        <PersonLink person={person} />
       </td>
 
       <td>{person.sex}</td>
